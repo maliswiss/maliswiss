@@ -1,4 +1,4 @@
-[![MasterHead]https://miro.medium.com/v2/resize:fit:1400/1*jeba366D4WO5mSRKVlvSgQ.png
+[![MasterHead](https://miro.medium.com/v2/resize:fit:1400/1*jeba366D4WO5mSRKVlvSgQ.png)
 <h1 align="center">Hi 👋, I'm Mehmet Ali Gür</h1>
 <h3 align="center">Cloud and Devops</h3>
 
