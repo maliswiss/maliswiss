@@ -2,7 +2,7 @@
 <h1 align="center">Hi 👋, I'm Mehmet Ali Gür</h1>
 <h3 align="center">Cloud and Devops</h3>
 
-- 💬 Ask me about **AWS-DEVOPS , CISCO , SYSTEM ADMINSTRATOR**
+- 💬 Ask me about **AWS-DEVOPS , System Engineering, Platform Engineering, Cloud Computing **
 
 - 📫 How to reach me **malibeyswiss@gmail.com**
 
