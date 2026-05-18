@@ -88,15 +88,14 @@ Platform Engineer with hands-on experience across **cloud infrastructure**, **co
 
 | Projekt | Stack | Beschreibung |
 | :--- | :--- | :--- |
-| ☁️ **[Cloud-Plattform-Deployment-mit-Azure](https://github.com/maliswiss/Cloud-Plattform-Deployment-mit-Azure)** | C#, Azure | Cloud-Plattform Deployment auf Azure mit C# |
-| 🔄 **[WeatherWise-CI-CD-mit-GitHub-Actions](https://github.com/maliswiss/WeatherWise-CI-CD-mit-GitHub-Actions)** | GitHub Actions, CI/CD | Automatisierte Build- und Deployment-Pipeline |
-| 🐳 **[Multi-Service-Architektur-mit-Docker](https://github.com/maliswiss/Multi-Service-Architektur-mit-Docker)** | Docker Compose | Multi-Service-Architektur mit Docker Compose |
-| 🌐 **[network-infrastructure-vyos-opnsense](https://github.com/maliswiss/network-infrastructure-vyos-opnsense)** | VyOS, OPNsense | Multi-segment enterprise network with routing & firewalls |
-| ☸️ **[kubernetes-mattermost-deployment](https://github.com/maliswiss/kubernetes-mattermost-deployment)** | Kubernetes | Mattermost team chat platform deployed on K8s |
-| 🖥️ **[windows-server-active-directory-lab](https://github.com/maliswiss/windows-server-active-directory-lab)** | Windows Server, AD | Complete Windows Server lab with Active Directory |
-| 🐧 **[Linux-Advance-Project](https://github.com/maliswiss/Linux-Advance-Project)** | Linux, Bash | Advanced Linux server configuration and hardening |
-| 🐳 **[docker-lamp-nginx-stack](https://github.com/maliswiss/docker-lamp-nginx-stack)** | Docker, LAMP, Nginx | Two Docker projects: full LAMP stack and Nginx setup |
-
+| ☁️ **[Cloud-Plattform-Deployment-mit-Azure](https://github.com/maliswiss/Cloud-Plattform-Deployment-mit-Azure)** | JavaScript | C3 · Cloud-Plattform Deployment auf Azure App Service mit GitHub Actions Auto… |
+| 🔄 **[WeatherWise-CI-CD-mit-GitHub-Actions](https://github.com/maliswiss/WeatherWise-CI-CD-mit-GitHub-Actions)** | JavaScript | Keine Beschreibung verfügbar. |
+| 🐳 **[Multi-Service-Architektur-mit-Docker-Compose](https://github.com/maliswiss/Multi-Service-Architektur-mit-Docker-Compose)** | TypeScript | Multi-Service-Architektur mit Docker Compose |
+| 🐳 **[docker-lamp-nginx-stack](https://github.com/maliswiss/docker-lamp-nginx-stack)** | Shell | Two Docker projects: full LAMP stack (Apache + PHP + MySQL + phpMyAdmin) and… |
+| 🖥️ **[windows-server-active-directory-lab](https://github.com/maliswiss/windows-server-active-directory-lab)** | PowerShell | Complete Windows Server lab: Active Directory, Group Policy, DHCP, DNS, WDS,… |
+| 💠 **[csharp-winforms-messenger-app](https://github.com/maliswiss/csharp-winforms-messenger-app)** | C# | Two-window WinForms chat app demonstrating events, delegates, and the Observe… |
+| 🌐 **[network-infrastructure-vyos-opnsense](https://github.com/maliswiss/network-infrastructure-vyos-opnsense)** | — | Multi-segment enterprise network: VyOS router, OPNsense firewall, DMZ, transp… |
+| ☸️ **[kubernetes-mattermost-deployment](https://github.com/maliswiss/kubernetes-mattermost-deployment)** | Shell | Mattermost team chat platform deployed on Kubernetes (Minikube) with persiste… |
 <!-- PROJECTS:END -->
 
 ---
