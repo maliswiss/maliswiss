@@ -88,7 +88,7 @@ Platform Engineer with hands-on experience across **cloud infrastructure**, **co
 
 | Projekt | Stack | Beschreibung |
 | :--- | :--- | :--- |
-| 🐳 **[Weatherwise-Azure-Cloud-Deployment](https://github.com/maliswiss/Weatherwise-Azure-Cloud-Deployment)** | — | Containerized fullstack weather application deployed to Azure with CI/CD pipe… |
+| 🐳 **[weatherwise-azure-cloud-native-platform](https://github.com/maliswiss/weatherwise-azure-cloud-native-platform)** | TypeScript | Cloud-native fullstack weather platform on Azure — containerized multi-servic… |
 | ☁️ **[Cloud-Plattform-Deployment-mit-Azure](https://github.com/maliswiss/Cloud-Plattform-Deployment-mit-Azure)** | JavaScript | C3 · Cloud-Plattform Deployment auf Azure App Service mit GitHub Actions Auto… |
 | 🔄 **[WeatherWise-CI-CD-mit-GitHub-Actions](https://github.com/maliswiss/WeatherWise-CI-CD-mit-GitHub-Actions)** | JavaScript | Keine Beschreibung verfügbar. |
 | 🐳 **[Multi-Service-Architektur-mit-Docker-Compose](https://github.com/maliswiss/Multi-Service-Architektur-mit-Docker-Compose)** | TypeScript | Multi-Service-Architektur mit Docker Compose |
