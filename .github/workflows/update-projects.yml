@@ -1,27 +1,24 @@
 name: Update Featured Projects
 
-# Diese Workflow aktualisiert den "Featured Projects"-Bereich im Profil-README automatisch.
-# Sie wird täglich ausgeführt und kann auch manuell gestartet werden.
-
+# Aktualisiert den "Featured Projects"-Bereich im Profil-README automatisch.
 on:
-  schedule:
-    # Jeden Tag um 06:00 UTC (08:00 Bern-Zeit im Sommer)
-    - cron: '0 6 * * *'
-  workflow_dispatch:
+  # Bei jedem Push auf den Standardbranch
   push:
-    branches:
-      - main
-    paths:
-      - 'scripts/update_projects.py'
-      - '.github/workflows/update-projects.yml'
+    branches: [main]
+    paths-ignore:
+      - 'README.md'          # Endlosschleife vermeiden (eigene Commits ignorieren)
+  # Taeglich um 06:00 UTC
+  schedule:
+    - cron: '0 6 * * *'
+  # Manuell ausloesbar ueber den Actions-Tab
+  workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: write            # noetig, um README zurueck zu committen
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
-
     steps:
       - name: Repository auschecken
         uses: actions/checkout@v4
@@ -31,23 +28,24 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Abhängigkeiten installieren
+      - name: Abhaengigkeiten installieren
         run: pip install requests
 
-      - name: Projekte-Sektion aktualisieren
+      - name: Featured Projects aktualisieren
         env:
+          GH_USERNAME: ${{ github.repository_owner }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GH_USERNAME: maliswiss
-        run: python scripts/update_projects.py
+          MAX_REPOS: '8'
+        run: python update_projects.py
 
-      - name: Änderungen committen und pushen
+      - name: Aenderungen committen und pushen
         run: |
           git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           if git diff --quiet README.md; then
-            echo "Keine Änderungen am README — kein Commit nötig."
+            echo "Keine Aenderungen am README."
           else
             git add README.md
-            git commit -m "chore: Featured Projects automatisch aktualisiert"
+            git commit -m "chore: update featured projects [skip ci]"
             git push
           fi

@@ -88,15 +88,14 @@ Platform Engineer with hands-on experience across **cloud infrastructure**, **co
 
 | Projekt | Stack | Beschreibung |
 | :--- | :--- | :--- |
-| ☁️ **[Cloud-Plattform-Deployment-mit-Azure](https://github.com/maliswiss/Cloud-Plattform-Deployment-mit-Azure)** | C#, Azure | Cloud-Plattform Deployment auf Azure mit C# |
-| 🔄 **[WeatherWise-CI-CD-mit-GitHub-Actions](https://github.com/maliswiss/WeatherWise-CI-CD-mit-GitHub-Actions)** | GitHub Actions, CI/CD | Automatisierte Build- und Deployment-Pipeline |
-| 🐳 **[Multi-Service-Architektur-mit-Docker](https://github.com/maliswiss/Multi-Service-Architektur-mit-Docker)** | Docker Compose | Multi-Service-Architektur mit Docker Compose |
-| 🌐 **[network-infrastructure-vyos-opnsense](https://github.com/maliswiss/network-infrastructure-vyos-opnsense)** | VyOS, OPNsense | Multi-segment enterprise network with routing & firewalls |
-| ☸️ **[kubernetes-mattermost-deployment](https://github.com/maliswiss/kubernetes-mattermost-deployment)** | Kubernetes | Mattermost team chat platform deployed on K8s |
-| 🖥️ **[windows-server-active-directory-lab](https://github.com/maliswiss/windows-server-active-directory-lab)** | Windows Server, AD | Complete Windows Server lab with Active Directory |
-| 🐧 **[Linux-Advance-Project](https://github.com/maliswiss/Linux-Advance-Project)** | Linux, Bash | Advanced Linux server configuration and hardening |
-| 🐳 **[docker-lamp-nginx-stack](https://github.com/maliswiss/docker-lamp-nginx-stack)** | Docker, LAMP, Nginx | Two Docker projects: full LAMP stack and Nginx setup |
-
+| 🔄 **[microservices-cicd-petclinic-capstone](https://github.com/maliswiss/microservices-cicd-petclinic-capstone)** | HCL | Capstone: full CI/CD platform for Spring PetClinic microservices using Jenkin… |
+| ☸️ **[kubernetes-microservice-phonebook](https://github.com/maliswiss/kubernetes-microservice-phonebook)** | Python | Microservice phonebook on Kubernetes: Deployments, HPAs, Services, Ingress, p… |
+| 🏗️ **[terraform-phonebook-alb-asg-rds](https://github.com/maliswiss/terraform-phonebook-alb-asg-rds)** | Python | Flask phonebook deployed on AWS with Terraform: Application Load Balancer, Au… |
+| 🔧 **[jenkins-cicd-pipeline-ecr-ansible](https://github.com/maliswiss/jenkins-cicd-pipeline-ecr-ansible)** | JavaScript | Jenkins declarative CI/CD pipeline: Terraform provision, Docker build, push t… |
+| 🔧 **[ansible-multinode-docker-webapp](https://github.com/maliswiss/ansible-multinode-docker-webapp)** | HCL | Multi-node 3-tier web app (React/Node/PostgreSQL) deployed across EC2 worker… |
+| 🐳 **[docker-bookstore-api-flask-mysql](https://github.com/maliswiss/docker-bookstore-api-flask-mysql)** | Python | Dockerized Flask + MySQL bookstore REST API, orchestrated with Docker Compose… |
+| ☁️ **[aws-boto3-resource-checker](https://github.com/maliswiss/aws-boto3-resource-checker)** | Python | Python Boto3 automation: tag-based EC2 start/stop scheduler with Lambda and E… |
+| ☁️ **[django-blog-aws-capstone](https://github.com/maliswiss/django-blog-aws-capstone)** | Python | Django blog on full AWS architecture: ALB, ASG, RDS, S3, CloudFront, Lambda,… |
 <!-- PROJECTS:END -->
 
 ---
