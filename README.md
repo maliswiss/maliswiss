@@ -88,14 +88,14 @@ Platform Engineer with hands-on experience across **cloud infrastructure**, **co
 
 | Projekt | Stack | Beschreibung |
 | :--- | :--- | :--- |
+| ☁️ **[aws-boto3-resource-checker](https://github.com/maliswiss/aws-boto3-resource-checker)** | Python | Python Boto3 automation: tag-based EC2 start/stop scheduler with Lambda and E… |
+| ☁️ **[django-blog-aws-capstone](https://github.com/maliswiss/django-blog-aws-capstone)** | Python | Django blog on full AWS architecture: ALB, ASG, RDS, S3, CloudFront, Lambda,… |
+| ☁️ **[flask-phonebook-aws-rds-loadbalancer](https://github.com/maliswiss/flask-phonebook-aws-rds-loadbalancer)** | Python | Flask phonebook CRUD on AWS: Application Load Balancer, Auto Scaling Group, a… |
+| ☁️ **[static-website-aws-s3-cloudfront](https://github.com/maliswiss/static-website-aws-s3-cloudfront)** | HTML | Static website on AWS deployed two ways: EC2 plus Apache, and S3 plus CloudFr… |
+| ☁️ **[flask-roman-numerals-converter-aws-ec2](https://github.com/maliswiss/flask-roman-numerals-converter-aws-ec2)** | Python | Flask Roman numerals converter deployed on AWS EC2 via CloudFormation |
+| 📦 **[python-flask-fundamentals](https://github.com/maliswiss/python-flask-fundamentals)** | HTML | Five progressive Flask lessons: Hello World, Jinja templates, routing, forms,… |
 | 🐳 **[weatherwise-azure-cloud-native-platform](https://github.com/maliswiss/weatherwise-azure-cloud-native-platform)** | TypeScript | Cloud-native fullstack weather platform on Azure — containerized multi-servic… |
 | ☁️ **[Cloud-Plattform-Deployment-mit-Azure](https://github.com/maliswiss/Cloud-Plattform-Deployment-mit-Azure)** | JavaScript | C3 · Cloud-Plattform Deployment auf Azure App Service mit GitHub Actions Auto… |
-| 🔄 **[WeatherWise-CI-CD-mit-GitHub-Actions](https://github.com/maliswiss/WeatherWise-CI-CD-mit-GitHub-Actions)** | JavaScript | Keine Beschreibung verfügbar. |
-| 🐳 **[Multi-Service-Architektur-mit-Docker-Compose](https://github.com/maliswiss/Multi-Service-Architektur-mit-Docker-Compose)** | TypeScript | Multi-Service-Architektur mit Docker Compose |
-| 🐳 **[docker-lamp-nginx-stack](https://github.com/maliswiss/docker-lamp-nginx-stack)** | Shell | Two Docker projects: full LAMP stack (Apache + PHP + MySQL + phpMyAdmin) and… |
-| 🖥️ **[windows-server-active-directory-lab](https://github.com/maliswiss/windows-server-active-directory-lab)** | PowerShell | Complete Windows Server lab: Active Directory, Group Policy, DHCP, DNS, WDS,… |
-| 💠 **[csharp-winforms-messenger-app](https://github.com/maliswiss/csharp-winforms-messenger-app)** | C# | Two-window WinForms chat app demonstrating events, delegates, and the Observe… |
-| 🌐 **[network-infrastructure-vyos-opnsense](https://github.com/maliswiss/network-infrastructure-vyos-opnsense)** | — | Multi-segment enterprise network: VyOS router, OPNsense firewall, DMZ, transp… |
 <!-- PROJECTS:END -->
 
 ---
