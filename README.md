@@ -71,6 +71,7 @@ Platform Engineer with hands-on experience across **cloud infrastructure**, **co
   <img src="https://img.shields.io/badge/Firewall_%26_DMZ-D94F00?style=for-the-badge&logo=opnsense&logoColor=white" />
   <img src="https://img.shields.io/badge/Penetration_Testing-C62828?style=for-the-badge&logo=hackthebox&logoColor=white" />
 </p>
+
 ### Observability
 <p>
   <img src="https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white" />
