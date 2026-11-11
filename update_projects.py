@@ -10,6 +10,9 @@ Es ersetzt den Inhalt zwischen den Markierungen:
     <!-- PROJECTS:START -->
     <!-- PROJECTS:END -->
 
+Repositories in PINNED_REPOS stehen immer zuoberst, der Rest folgt
+nach letztem Update sortiert.
+
 Konfiguration über Umgebungsvariablen:
     GH_USERNAME  GitHub-Benutzername (Standard: maliswiss)
     GH_TOKEN     GitHub-Token für API-Zugriff (optional, aber empfohlen)
@@ -30,6 +33,11 @@ TOKEN = os.environ.get("GH_TOKEN", "")
 MAX_REPOS = int(os.environ.get("MAX_REPOS", "8"))
 README_PATH = Path("README.md")
 
+# Repos, die immer angezeigt werden (in dieser Reihenfolge, zuoberst)
+PINNED_REPOS = [
+    "digital-forensics-hacking-case-analysis",
+]
+
 # Repos, die nie im Profil angezeigt werden sollen
 EXCLUDED_REPOS = {
     USERNAME,           # Profil-Repository selbst
@@ -38,14 +46,16 @@ EXCLUDED_REPOS = {
     "Flask_03_04_If_Handling_Routes_and_Get_Post_Methods",
     "Flask-01-02",
     "aws-django-app",
+    "Digitaler-forensischer-Analysebericht",
 }
 
 # Schlüsselwörter → Icons für eine konsistente visuelle Sprache
 ICON_MAP = [
+    (("forensics", "security", "pentest", "hacking"), "🛡️"),
     (("kubernetes", "k8s"),                 "☸️"),
+    (("jenkins",),                          "🔄"),
     (("ansible",),                          "🔧"),
     (("terraform", "iac"),                  "🏗️"),
-    (("jenkins",),                          "🔄"),
     (("docker", "container", "compose"),    "🐳"),
     (("azure",),                            "☁️"),
     (("aws", "cloud"),                      "☁️"),
@@ -55,7 +65,6 @@ ICON_MAP = [
     (("linux",),                            "🐧"),
     (("react", "vue", "weather"),           "⚛️"),
     (("csharp", "winforms", "dotnet"),      "💠"),
-    (("security", "pentest", "forensics"),  "🛡️"),
     (("iot", "esp32"),                      "📡"),
 ]
 DEFAULT_ICON = "📦"
@@ -66,11 +75,9 @@ DEFAULT_ICON = "📦"
 def pick_icon(name: str, description: str, topics: list[str]) -> str:
     """Wählt ein Icon. Zuerst nach Repo-Name (genauer), dann nach Beschreibung."""
     name_l = name.lower()
-    # 1. Prioritaet: Treffer im Repo-Namen
     for keywords, icon in ICON_MAP:
         if any(kw in name_l for kw in keywords):
             return icon
-    # 2. Fallback: Beschreibung + Topics
     haystack = " ".join([description or "", " ".join(topics)]).lower()
     for keywords, icon in ICON_MAP:
         if any(kw in haystack for kw in keywords):
@@ -98,6 +105,14 @@ def fetch_repos() -> list[dict]:
     return response.json()
 
 
+def order_repos(repos: list[dict]) -> list[dict]:
+    """Stellt angepinnte Repos an den Anfang, Rest bleibt nach Update sortiert."""
+    by_name = {r["name"]: r for r in repos}
+    pinned = [by_name[n] for n in PINNED_REPOS if n in by_name]
+    rest = [r for r in repos if r["name"] not in PINNED_REPOS]
+    return pinned + rest
+
+
 def build_table(repos: list[dict]) -> str:
     """Baut die Markdown-Tabelle für den Projekte-Bereich."""
     lines = [
@@ -108,7 +123,7 @@ def build_table(repos: list[dict]) -> str:
     ]
 
     count = 0
-    for repo in repos:
+    for repo in order_repos(repos):
         name = repo["name"]
         if name in EXCLUDED_REPOS or repo.get("fork") or repo.get("archived"):
             continue
@@ -116,7 +131,6 @@ def build_table(repos: list[dict]) -> str:
             break
 
         description = repo.get("description") or "Keine Beschreibung verfügbar."
-        # Beschreibung auf eine sinnvolle Länge kürzen
         if len(description) > 80:
             description = description[:77].rstrip() + "…"
 
@@ -154,7 +168,7 @@ def update_readme(new_section: str) -> bool:
         sys.exit(1)
 
     replacement = f"<!-- PROJECTS:START -->\n{new_section}<!-- PROJECTS:END -->"
-    updated = pattern.sub(replacement, original)
+    updated = pattern.sub(lambda _m: replacement, original)
 
     if updated == original:
         return False
